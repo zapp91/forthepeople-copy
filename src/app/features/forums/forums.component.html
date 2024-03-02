@@ -1,0 +1,73 @@
+<div class="forumsPage">
+  <a (click)="close()" class="close"></a>
+  <h1>Forums</h1>
+
+<app-forum *ngIf="selectedPost !== null"></app-forum>
+
+  <table align="center">
+    <tr>
+      <th>Title</th>
+      <th>Comments</th>
+      <th>Rating</th>
+    </tr>
+    <tr (click)="errorButtonNotConfigured(metaPost);" *ngFor='let metaPost of metaPosts'>
+      <td>{{ metaPost.title }}</td>
+      <td style="text-align: right;">{{ metaPost.numComments }}</td>
+      <td style="text-align: right;">{{ metaPost.rating }}</td>
+    </tr>
+
+<!-- ---------------------------------------------------- -->
+    <tr *ngFor='let metaPost of metaPosts'>
+      <td>{{ metaPost.title }}</td>
+      <td style="text-align: right;">{{ metaPost.numComments }}</td>
+      <td style="text-align: right;">{{ metaPost.rating }}</td>
+    </tr>
+    <tr *ngFor='let metaPost of metaPosts'>
+      <td>{{ metaPost.title }}</td>
+      <td style="text-align: right;">{{ metaPost.numComments }}</td>
+      <td style="text-align: right;">{{ metaPost.rating }}</td>
+    </tr>
+    <tr *ngFor='let metaPost of metaPosts'>
+      <td>{{ metaPost.title }}</td>
+      <td style="text-align: right;">{{ metaPost.numComments }}</td>
+      <td style="text-align: right;">{{ metaPost.rating }}</td>
+    </tr>
+    <tr *ngFor='let metaPost of metaPosts'>
+    <td>{{ metaPost.title }}</td>
+      <td style="text-align: right;">{{ metaPost.numComments }}</td>
+      <td style="text-align: right;">{{ metaPost.rating }}</td>
+    </tr>
+    <tr *ngFor='let metaPost of metaPosts'>
+      <td>{{ metaPost.title }}</td>
+      <td style="text-align: right;">{{ metaPost.numComments }}</td>
+      <td style="text-align: right;">{{ metaPost.rating }}</td>
+    </tr>
+    <tr *ngFor='let metaPost of metaPosts'>
+      <td>{{ metaPost.title }}</td>
+      <td style="text-align: right;">{{ metaPost.numComments }}</td>
+      <td style="text-align: right;">{{ metaPost.rating }}</td>
+    </tr>    
+    <tr *ngFor='let metaPost of metaPosts'>
+      <td>{{ metaPost.title }}</td>
+      <td style="text-align: right;">{{ metaPost.numComments }}</td>
+      <td style="text-align: right;">{{ metaPost.rating }}</td>
+    </tr>
+    <tr *ngFor='let metaPost of metaPosts'>
+      <td>{{ metaPost.title }}</td>
+      <td style="text-align: right;">{{ metaPost.numComments }}</td>
+      <td style="text-align: right;">{{ metaPost.rating }}</td>
+    </tr>    
+    <tr *ngFor='let metaPost of metaPosts'>
+      <td>{{ metaPost.title }}</td>
+      <td style="text-align: right;">{{ metaPost.numComments }}</td>
+      <td style="text-align: right;">{{ metaPost.rating }}</td>
+    </tr>
+    <tr *ngFor='let metaPost of metaPosts'>
+      <td>{{ metaPost.title }}</td>
+      <td style="text-align: right;">{{ metaPost.numComments }}</td>
+      <td style="text-align: right;">{{ metaPost.rating }}</td>
+    </tr>
+<!-- --------------------------------------------------- -->
+  </table>
+  
+</div>

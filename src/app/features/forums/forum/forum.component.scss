@@ -1,0 +1,30 @@
+.close {
+  display: inline-block;
+  position: relative;
+  right: 2em;
+  top: 0.5em;
+  width: 0px;
+  opacity: 0.3;
+  &:hover {
+   opacity: 1;
+  }
+  &:before, &:after {
+    position: absolute;
+    left: 15px;
+    content: ' ';
+    height: 33px;
+    width: 3px;
+    background-color: white;
+  }
+  &:before {
+    transform: rotate(45deg);
+  }
+  &:after {
+    transform: rotate(-45deg);
+  }
+}
+
+.forumsPage {
+  width: 100%;
+  text-align: center;
+}

@@ -1,0 +1,9 @@
+<h5 class="text-center">Favorite Regions</h5>
+
+<div tabindex="0" class="box" *ngFor="let region of favRegions; let i = index;">
+  <span [ngClass]="region.type" class="tag"> {{region.type}} </span>
+  <a class="regionLink">{{region.name}}<span *ngIf="region.type === 'city' || region.type === 'county'">, {{region.stateAcronym}}</span></a>
+  <div class="star float-right" (click)="removeRegion(i);" title="Unfavorite {{region.name}}" ></div>
+</div>
+
+<p class="text-center mb-0" *ngIf="favRegions.length === 0">You do not have any favorite regions!</p>

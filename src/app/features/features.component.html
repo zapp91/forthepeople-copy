@@ -1,0 +1,42 @@
+<div [style.display]="feature === '' ? 'block' : 'none'" style="text-align: center;">
+  <button class="btn btn-outline-light regionModuleBtn" (click)="feature = 'Forums'">
+    <a>Forums</a>
+  </button>
+
+  <button class="btn btn-outline-light regionModuleBtn" (click)="feature = 'Events'">
+    <a>Events</a>
+  </button>
+
+  <button class="btn btn-outline-light regionModuleBtn" (click)="feature = 'Groups'">
+    <a>Groups</a>
+  </button>
+
+  <button class="btn btn-outline-light regionModuleBtn" (click)="feature = 'Polls'">
+    <a>Polls</a>
+  </button>
+
+  <button class="btn btn-outline-light regionModuleBtn" (click)="feature = 'Petitions'">
+    <a>Petitions</a>
+  </button>
+
+  <button class="btn btn-outline-light regionModuleBtn" (click)="feature = 'Fundraisers'">
+    <a>Fundraisers</a>
+  </button>
+
+  <button class="btn btn-outline-light regionModuleBtn" (click)="feature = 'Legislation'">
+    <a>Legislation</a>
+  </button>
+
+  <button class="btn btn-outline-light regionModuleBtn" (click)="feature = 'Officials'">
+    <a>Officials</a>
+  </button>
+</div>
+
+<app-forums (closePage)="feature = ''" *ngIf="feature.match('Forum')"></app-forums>
+
+<div
+  style="text-align: center;"
+  *ngIf="feature.match('Events') || feature.match('Groups') || feature.match('Polls') || feature.match('Petitions') || feature.match('Fundraisers') || feature.match('Legislation') || feature.match('Officials')">
+  <p>Sorry, there is nothing here yet :(</p>
+  <button class="btn btn-outline-light regionModuleBtn" (click)="feature = ''">Back</button>
+</div>

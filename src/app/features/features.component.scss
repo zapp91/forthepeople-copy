@@ -1,0 +1,14 @@
+.regionModuleBtn {
+  background: blue;
+  margin: 1em;
+  width: 110px;
+  
+  &:hover, &:focus {
+    color: black;
+    background-color: white;
+  }
+}
+
+.regionModulesWrapper {
+  text-align: center;
+}

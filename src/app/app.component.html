@@ -1,0 +1,3 @@
+<app-navbar (messageEvent)="receiveMessage($event)"></app-navbar>
+<!-- <app-features *ngIf="!showRegionModules"></app-features> -->
+<app-features [style.display]="showRegionModules ? 'none' : 'block'"></app-features>

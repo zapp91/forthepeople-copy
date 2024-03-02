@@ -1,0 +1,17 @@
+.navWrapper {
+  background-color: rgba(0, 0, 255, 0.63);
+}
+
+nav {
+  transition: background 250ms;
+  &:hover {
+  transition: background 250ms;
+  background: rgb(0, 50, 100);
+  }
+}
+
+a {
+  margin-left: 1em;
+  margin-right: 1em;
+  text-align: center;
+}

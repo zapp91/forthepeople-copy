@@ -1,0 +1,8 @@
+<div [style.min-height]="regionSelectorOpen ? '100%' : ''" class="navWrapper">
+	<nav (resized)="onResize($event)" [style.justify-content]="justifyContent" class="navbar">
+		<a class="text-white" href="">For The People</a>
+		<a class="text-white" href="">{{currentRegion}}</a>
+		<button type="button" class="btn btn-outline-light" [class.active]="regionSelectorOpen" (click)="openRegionSelector()">Select a Region</button>
+  </nav>
+  <app-region-selector *ngIf="regionSelectorOpen"></app-region-selector>
+</div>

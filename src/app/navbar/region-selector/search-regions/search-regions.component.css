@@ -1,0 +1,7 @@
+.active-blue-4 input[type=text]:focus:not([readonly]) {
+  box-shadow: 0 0 0 2px lightblue;
+}
+
+input {
+  width: 270px;
+}

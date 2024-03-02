@@ -1,0 +1,22 @@
+.regionLink, .regionLink:hover{
+  text-decoration: none;
+}
+
+p, .box{
+  width: 270px;
+}
+
+.box {
+  cursor: pointer;
+  &:focus {
+    background-image: linear-gradient( white , transparent, transparent, transparent, white);
+    box-shadow: inset 0px 0px 0px 1px red !important;
+    outline: 1px solid white;
+  }
+  &:hover {
+    background-image: linear-gradient( white , transparent, transparent, transparent, white);
+    box-shadow: inset 0px 0px 0px 1px white !important;
+    outline: 1px solid red;
+  }
+}
+
